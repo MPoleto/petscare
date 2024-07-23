@@ -10,6 +10,8 @@ Projeto criado do zero para praticar Typescript.
     - Arquivo `main.ts` - para centralizar todas as importações em apenas um arquivo usando os módulos ES6.
   - Arquivo de configuração do `Typescript`: `tsconfig.json`
 
+- Seguir a abordagem *mobile-first*
+
 ## Referências
 
 - [Curso da Alura - TypeScript na prática: implemente um projeto completo com TypeScript e módulos](https://cursos.alura.com.br/course/typescript-pratica-projeto-completo-typescript-modulos)
