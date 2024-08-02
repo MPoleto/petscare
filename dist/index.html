@@ -3,27 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/favicon-heart.png" type="image">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/styles.css">
-  <title>Document</title>
+  <title>PetsCare - Veterinária</title>
 </head>
 <body>
   <header>
-    <!-- logo e/ou nome -->
-    <nav class="menu">
-      <input type="checkbox" id="menu" class="menu_checkbox">
-      <label for="menu" class="menu_rotulo">
-        <span class="menu_menu-hamburguer"></span>
+    <div class="menu__container">
+      <input type="checkbox" id="menu" class="menu__toggle">
+      <label for="menu" class="menu__label">
+        <div class="menu__menu-hamburguer"></div>
       </label>
-      <ul class="menu_lista">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Serviços</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul>
-    </nav>
+      <div class="menu__background"></div>
+      <nav class="menu__lista">
+        <ul>
+          <li class="menu__lista__item"><a href="#">Home</a></li>
+          <li class="menu__lista__item"><a href="#">Sobre</a></li>
+          <li class="menu__lista__item"><a href="#">Serviços</a></li>
+          <li class="menu__lista__item"><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <div class="logo">
+      <h1 class="logo__nome">PetsCare</h1>
+      <div class="logo__subtitulo">
+        <h2>Veterinária</h2>
+        <div class="logo__border-bottom"></div>
+      </div>
+    </div>
   </header>
-  <main></main>
+
+<main></main>
   <footer></footer>
 
   <script type="module" src="./js/main.js"></script>

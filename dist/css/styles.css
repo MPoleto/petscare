@@ -1,1 +1,24 @@
-@import url('./header.css');
+@import url('https://fonts.googleapis.com/css2?family=Numans&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('./menu.css');
+@import url('./logo.css');
+
+:root {
+  --font-titulo: "Philosopher", sans-serif;
+  --font-geral: "Numans", sans-serif;
+  --color-background-principal: #fff;
+  --color-background-menu: #ffd092; /* #f5ae52 ffc57a ffcb87 */
+  --color-background-menu-hover: #ffcb87;
+  --color-font-menu: #231915;
+  --color-font-logo: #111;
+}
+
+body {
+  background-color: var(--color-background-principal);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

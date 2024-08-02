@@ -1,0 +1,113 @@
+/* MENU FECHADO */
+
+.menu__container {
+  margin: .5rem;
+  position: absolute;
+  background-color: var(--color-background-menu);
+  border-radius: 50%; 
+}
+
+.menu__container:hover {
+  background-color: var(--color-background-menu-hover);
+}
+
+.menu__toggle {
+  display: none;
+}
+
+.menu__label {
+  position: relative;
+  cursor: pointer;
+  z-index: 9;
+}
+
+.menu__menu-hamburguer {
+  margin: .8rem;
+  width: 2rem;
+  height: 2rem;
+  background-image: url("../img/icons/menu-abrir.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 200ms ease-in-out 0s;
+}
+
+.menu__background {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  background: transparent;
+  z-index: -2;
+  transition: 200ms ease-in-out 0s;
+}
+
+.menu__lista {
+  display: none;
+}
+
+.menu__lista ul {
+  margin: .5rem 1.2rem;
+  width: 12rem;
+  min-width: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.menu__lista__item {
+  padding: 1.5rem 0 .5rem;
+  border-bottom: 1px dotted var(--color-font-menu);
+  width: 10rem;
+}
+
+.menu__lista__item > a {
+  color: var(--color-font-menu);
+  font-size: 1rem;
+  font-family: var(--font-geral);
+}
+
+.menu__lista__item::first-letter {
+  font-weight: bold;
+  font-size: 1.3rem;
+  font-family: var(--font-titulo);
+}
+
+.menu__lista__item:hover {
+  border-bottom: 2px dotted var(--color-font-menu);
+}
+
+.menu__lista__item > a:hover {
+  font-size: 1.1rem;
+}
+
+
+/* MENU ABERTO */
+
+.menu__container:has(.menu__toggle:checked) {
+  background-color: transparent;
+}
+
+.menu__toggle:checked ~ .menu__label > .menu__menu-hamburguer{
+  width: 2.2rem;
+  height: 2.2rem;
+  background-image: url("../img/icons/menu-fechar.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 200ms ease-in-out 0s;
+}
+
+.menu__toggle:checked ~ .menu__background {
+  position: fixed;
+  width: 14rem;
+  height: 100vh;
+  z-index: 1;
+  background-color: var(--color-background-menu);
+  transition: 200ms ease-in-out 0s;
+}
+
+.menu__toggle:checked ~ .menu__lista {
+  display: block;
+  position: fixed;
+  z-index: 9;
+  transition: 200ms ease-in-out 0s;
+}
+
