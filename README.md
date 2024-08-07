@@ -1,5 +1,6 @@
 # Título
 
+Criação de uma página web para uma clínica veterinária fictícia.  
 Projeto criado do zero para praticar Typescript.
 
 ## Descrição
@@ -8,11 +9,15 @@ Projeto criado do zero para praticar Typescript.
   - Diretório `dist` para os arquivos que vão ser usados no ambiente final (produção): `index.html` e subdiretórios para os arquivos de `CSS`, `Javascript` e `imagens`.
   - Diretório `src` para os arquivos usados no desenvolvimento do projeto, que serão os arquivos de `Typescript`.
     - Arquivo `main.ts` - para centralizar todas as importações em apenas um arquivo usando os módulos ES6.
-  - Arquivo de configuração do `Typescript`: `tsconfig.json`
+  - Arquivo de configuração do `Typescript`: `tsconfig.json`.
 
-- Seguir a abordagem *mobile-first*
+2ª - Desenvolver HTML e CSS:
+  - Criar uma logo para representar a clínica veterinária.
+  - Seguir a abordagem *mobile-first* para a criação e estilização da página.
+    - Menu da página para a versão mobile utilizando `input checkbox`.
+  - Aplicar boas práticas CSS para nomenclatura das classes, criação de arquivos separados para os componentes e uso de variáveis.
 
 ## Referências
 
+- [Ícones da biblioteca do Font Awesome](https://fontawesome.com/)
 - [Curso da Alura - TypeScript na prática: implemente um projeto completo com TypeScript e módulos](https://cursos.alura.com.br/course/typescript-pratica-projeto-completo-typescript-modulos)
-- []()
