@@ -2,6 +2,7 @@
 
 @import url('./menu.css');
 @import url('./logo.css');
+@import url('./banner.css');
 
 :root {
   --font-titulo: "Philosopher", sans-serif;
@@ -14,6 +15,8 @@
 }
 
 body {
+  width: 100vw;
+  font-family: var(--font-geral);
   background-color: var(--color-background-principal);
 }
 
@@ -21,4 +24,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 15vh;
+}
+
+main section:not(:first-child) {
+  padding: 2rem;
 }
