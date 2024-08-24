@@ -1,0 +1,10 @@
+@import url('./banner.css');
+@import url('./servicos.css');
+
+main section:not(:first-child) {
+  padding: 2rem 0;
+}
+
+main section:nth-child(3) {
+  background-color: var(--color-background-menu-hover);
+}

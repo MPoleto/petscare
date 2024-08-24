@@ -2,15 +2,16 @@
 
 @import url('./menu.css');
 @import url('./logo.css');
-@import url('./banner.css');
+@import url('./main.css');
+
 
 :root {
   --font-titulo: "Philosopher", sans-serif;
   --font-geral: "Numans", sans-serif;
   --color-background-principal: #fff;
   --color-background-menu: #ffd092; /* #f5ae52 ffc57a ffcb87 */
-  --color-background-menu-hover: #ffc57a;
-  --color-font-menu: #231915;
+  --color-background-menu-hover: #dd5119; /* #ff5e00 */
+  --color-font-menu: rgb(35, 25, 21); /* #231915 */
   --color-font-logo: #111;
 }
 
@@ -27,6 +28,3 @@ header {
   height: 15vh;
 }
 
-main section:not(:first-child) {
-  padding: 2rem;
-}
