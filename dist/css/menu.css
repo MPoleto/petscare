@@ -22,9 +22,9 @@
 }
 
 .menu__menu-hamburguer {
-  margin: .8rem;
-  width: 2rem;
-  height: 2rem;
+  margin: .7rem;
+  width: 1.7rem;
+  height: 1.7rem;
   background-image: url("../img/icons/menu-abrir.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -54,29 +54,32 @@
   align-items: flex-start;
 }
 .menu__lista__item {
-  padding: 1.5rem 0 .5rem;
-  border-bottom: 1px dotted var(--color-font-menu);
   width: 10rem;
 }
 
-.menu__lista__item > a {
-  color: var(--color-font-menu);
+.menu__lista__item a {
+  display: block;
+  padding: 2rem 0 .5rem;
   font-size: 1rem;
   font-family: var(--font-geral);
+  color: var(--color-font-menu);
+  border-bottom: 1px dotted var(--color-font-menu);
 }
 
-.menu__lista__item::first-letter {
+.menu__lista__item a::first-letter {
   font-weight: bold;
   font-size: 1.3rem;
   font-family: var(--font-titulo);
 }
 
-.menu__lista__item:hover {
+.menu__lista__item a:hover {
+  font-size: 1.1rem;
+  font-weight: bold;
   border-bottom: 2px dotted var(--color-font-menu);
 }
 
-.menu__lista__item > a:hover {
-  font-size: 1.1rem;
+.menu__lista__item:hover a::first-letter {
+  font-size: 1.5rem;
 }
 
 
@@ -84,11 +87,12 @@
 
 .menu__container:has(.menu__toggle:checked) {
   background-color: transparent;
+  position: fixed;
 }
 
-.menu__toggle:checked ~ .menu__label > .menu__menu-hamburguer{
-  width: 2.2rem;
-  height: 2.2rem;
+.menu__toggle:checked ~ .menu__label > .menu__menu-hamburguer {
+  width: 2rem;
+  height: 2rem;
   background-image: url("../img/icons/menu-fechar.svg");
   background-position: center;
   background-repeat: no-repeat;

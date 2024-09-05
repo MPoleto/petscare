@@ -1,10 +1,47 @@
 @import url('./banner.css');
 @import url('./servicos.css');
+@import url('./contato.css');
 
 main section:not(:first-child) {
   padding: 2rem 0;
 }
 
-main section:nth-child(3) {
+main .texto-inicial p {
+  padding: 0rem 1rem;
+  font-size: 1.2rem;
+  text-align: justify;
+  line-height: 2rem;
+}
+
+main section:nth-child(3), main section:nth-child(5) {
   background-color: var(--color-background-menu-hover);
+}
+
+#localizacao {
+  width: 100vw;
+  height: 90vh;
+}
+
+#localizacao h2 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--color-background-principal);
+}
+
+#localizacao p {
+  padding: 1.5rem 1.5rem 0rem;
+  font-size: .8rem;
+  text-align: center;
+  line-height: 1.5rem;
+  color: var(--color-background-principal);
+}
+#localizacao p span {
+  font-weight: bold;
+}
+
+#localizacao iframe {
+  margin: 1.5rem 7%;
+  width: 86%;
+  height: 60vh;
 }

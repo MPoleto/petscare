@@ -19,10 +19,10 @@
       <nav class="menu__lista">
         <ul>
           <li class="menu__lista__item"><a href="#">Home</a></li>
-          <li class="menu__lista__item"><a href="#">Sobre</a></li>
+          <!-- <li class="menu__lista__item"><a href="#">Sobre</a></li> -->
           <li class="menu__lista__item"><a href="#servicos">Serviços</a></li>
-          <li class="menu__lista__item"><a href="#">Contato</a></li>
-          <li class="menu__lista__item"><a href="#">Localização</a></li>
+          <li class="menu__lista__item"><a href="#contato__container">Contato</a></li>
+          <li class="menu__lista__item"><a href="#localizacao">Localização</a></li>
         </ul>
       </nav>
     </div>
@@ -40,8 +40,8 @@
     <section class="imagem__container" data-banner>
       <img src="./img/banner.jpg" alt="Photo by Tima Miroshnichenko on Pexels - A Vet Checking a Dog Eyes Using a Medical Equipment" data-banner-img>
     </section>
-    <section>
-      <p>Em todos os momentos que precisar estamos aqui para te ajudar a cuidar do seu pet</p>
+    <section class="texto-inicial">
+      <p>Conte conosco para cuidar do seu pet em qualquer momento, sempre que precisar, com carinho e dedicação!</p>
     </section>
     <section id="servicos">
       <nav class="servicos__container">
@@ -63,16 +63,56 @@
         </a>
       </nav>
     </section>
-    <section>
-      <h2>Contato</h2>
+    <section id="contato__container">
+      <h2>Tire suas dúvidas ou agende uma consulta</h2>
+
+      <ul class="contato__info">
+        <li class="contato__info__item">
+          <img src="./img/icons/telefone.svg" alt="">
+          <p>3333-3333</p>
+        </li>
+        <li class="contato__info__item">
+          <img src="./img/icons/whatsapp-section-contato.svg" alt="">
+          <p>99 99999-9999</p>
+        </li>
+        <li class="contato__info__item">
+          <img src="./img/icons/email.svg" alt="">
+          <p>petscare@email.com</p>
+        </li>
+      </ul>
+
+      <form class="contato__form">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome">
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email">
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone">
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea type="" id="mensagem" rows="5" cols="20"></textarea>
+
+        <input type="submit" value="Enviar">
+      </form>
     </section>
-    <section>
+    <section id="localizacao">
       <h2>Localização</h2>
-      <p>Endereço: Rua, número, bairro, cidade</p>
+      <p><span>Endereço: </span>Avenida Marechal Floriano Peixoto, Centro, Curitiba-PR</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.8687345705916!2d-49.266202000000035!3d-25.442651700000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce46726ba27eb%3A0xac53578a0ba4d725!2sAv.%20Mal.%20Floriano%20Peixoto%2C%201475-1465%20-%20Rebou%C3%A7as%2C%20Curitiba%20-%20PR%2C%2082590-300!5e0!3m2!1spt-BR!2sbr!4v1725028895886!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>
 
-  <footer></footer>
+  <a href="https://wa.me/5599999999999" target="_blank" class="whatsapp-web__link">
+    <img src="./img/icons/whatsapp-link.svg" alt="Ícone Whatsapp">
+  </a>
+
+  <footer>
+    <p>PetsCare - Clínica Veterinária - © 2024</p>
+    <img src="./img/icons/favicon-coracao-pata.png" alt="Uma pata de cachorro dentro de um coração">
+    <p>Desenvolvido por Mariana Poleto</p>
+  </footer>
 
   <script type='text/javascript' src='./js/config.js'></script>
   <script type="module" src="./js/script.js"></script>

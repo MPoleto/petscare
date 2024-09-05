@@ -4,8 +4,8 @@
 }
 
 .imagem__container img {
-  max-width: 100vw;
-  max-height: 70vw;
+  width: 100vw;
+  height: 70vw;
   margin: .5rem auto;
   display: block;
   object-fit: cover;

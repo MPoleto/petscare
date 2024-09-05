@@ -34,3 +34,13 @@
   font-size: .7rem;
   color: var(--color-font-menu);
 }
+
+.servico:hover {
+  border: 3px solid var(--color-background-menu);
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px 0 rgba(35, 25, 21, 0.2), 0 6px 20px 0 rgba(35, 25, 21, 0.19);
+}
+
+.servico:active {
+  background-color: var(--color-background-menu);
+} 

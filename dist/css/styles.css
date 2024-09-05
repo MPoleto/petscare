@@ -25,6 +25,43 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 15vh;
+  height: 18vh;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: .3rem;
+  padding: .5rem;
+  font-size: .7rem;
+  background-color: var(--color-background-menu);
+  color: var(--color-font-menu);
+}
+
+footer img {
+  width: 1.2rem;
+  height: 1.1rem;
+}
+
+.whatsapp-web__link {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 3rem;
+  height: 3rem;
+  padding: .4rem;
+  box-shadow: 0px 0px 8px rgba(18, 140, 126, 0.2), 0px 0px 20px rgba(18, 140, 126, 0.2);
+  border-radius: 50%;
+  background-color: var(--color-background-principal);
+}
+
+.whatsapp-web__link img {
+  height: 2.2rem;
+  width: 2.2rem;
+}
+
+.whatsapp-web__link:hover {
+  background-color: #ddd;
+}
