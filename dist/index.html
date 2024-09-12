@@ -11,18 +11,17 @@
 <body>
   <header>
     <div class="menu__container">
-      <input type="checkbox" id="menu" class="menu__toggle">
+      <input type="checkbox" id="menu" class="menu__toggle" data-checkbox>
       <label for="menu" class="menu__label">
         <div class="menu__menu-hamburguer"></div>
       </label>
       <div class="menu__background"></div>
       <nav class="menu__lista">
         <ul>
-          <li class="menu__lista__item"><a href="#">Home</a></li>
-          <!-- <li class="menu__lista__item"><a href="#">Sobre</a></li> -->
-          <li class="menu__lista__item"><a href="#servicos">Serviços</a></li>
-          <li class="menu__lista__item"><a href="#contato__container">Contato</a></li>
-          <li class="menu__lista__item"><a href="#localizacao">Localização</a></li>
+          <li class="menu__lista__item" data-menu-link><a href="#">Home</a></li>
+          <li class="menu__lista__item" data-menu-link><a href="#servicos">Serviços</a></li>
+          <li class="menu__lista__item" data-menu-link><a href="#contato__container">Contato</a></li>
+          <li class="menu__lista__item" data-menu-link><a href="#localizacao">Localização</a></li>
         </ul>
       </nav>
     </div>
@@ -79,27 +78,35 @@
           <img src="./img/icons/email.svg" alt="">
           <p>petscare@email.com</p>
         </li>
+        <li class="contato__info__item">
+          <img src="./img/icons/relogio.svg" alt="">
+          <p>Funcionamento: segunda a sábado - 8h às 19h</p>
+        </li>
       </ul>
 
-      <form class="contato__form">
+      <form class="contato__form" method="post" data-form>
         <label for="nome">Nome:</label>
-        <input type="text" id="nome">
+        <input type="text" id="nome" minlength="2" required>
 
         <label for="email">E-mail:</label>
-        <input type="email" id="email">
+        <input type="email" id="email" minlength="4" required>
 
         <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone">
+        <input type="tel" id="telefone" minlength="10" maxlength="15"  pattern="[0-9]{10,15}" required>
 
         <label for="mensagem">Mensagem:</label>
-        <textarea type="" id="mensagem" rows="5" cols="20"></textarea>
+        <textarea id="mensagem" rows="5" cols="20" minlength="3" required></textarea>
 
-        <input type="submit" value="Enviar">
+        <div class="submit__form">
+          <p data-salvo>Mensagem enviada!</p>
+          <input type="submit" value="Enviar">
+        </div>
       </form>
     </section>
     <section id="localizacao">
       <h2>Localização</h2>
       <p><span>Endereço: </span>Avenida Marechal Floriano Peixoto, Centro, Curitiba-PR</p>
+      
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.8687345705916!2d-49.266202000000035!3d-25.442651700000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce46726ba27eb%3A0xac53578a0ba4d725!2sAv.%20Mal.%20Floriano%20Peixoto%2C%201475-1465%20-%20Rebou%C3%A7as%2C%20Curitiba%20-%20PR%2C%2082590-300!5e0!3m2!1spt-BR!2sbr!4v1725028895886!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>
