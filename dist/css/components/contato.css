@@ -47,12 +47,12 @@
 
 .contato__form label {
   padding-top: .8rem;
-  color: var(--color-font-menu);
+  color: var(--color-font-secundaria);
 }
 
 .contato__form input, .contato__form textarea {
   padding: .3rem;
-  border: 1px solid var(--color-font-menu);
+  border: 1px solid var(--color-font-secundaria);
   font-size: .8rem;
   font-family: var(--font-geral);
   background-color: #ffd0924e;
@@ -60,7 +60,7 @@
 }
 
 .contato__form input:focus, .contato__form textarea:focus {
-  border: 2px solid var(--color-background-menu-hover); 
+  border: 2px solid var(--color-background-secundaria); 
 }
 
 .submit__form {
@@ -80,7 +80,7 @@
   padding: .6rem;
   font-weight: bold;
   color: var(--color-background-principal);
-  background-color: var(--color-font-menu);
+  background-color: var(--color-font-secundaria);
 }
 
 .contato__form .submit__form input[type="submit"]:hover {
@@ -89,7 +89,7 @@
   padding: .6rem;
   font-weight: bold;
   border: none;
-  color: var(--color-font-menu);
-  background-color: var(--color-background-menu);
-  box-shadow: 0 4px 8px 0 rgba(35, 25, 21, 0.2), 0 6px 20px 0 rgba(35, 25, 21, 0.19);
+  color: var(--color-font-secundaria);
+  background-color: var(--color-background-terciaria);
+  box-shadow: var(--shadow-dark);
 }

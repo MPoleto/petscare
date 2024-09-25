@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Numans&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('../components/menu.css');
+@import url('../components/logo.css');
+@import url('./main.css');
+@import url('../components/footer.css');
+
+
+:root {
+  --font-titulo: "Philosopher", sans-serif;
+  --font-geral: "Numans", sans-serif;
+  --color-background-principal: #fff;
+  --color-background-secundaria: #dd5119; 
+  --color-background-terciaria: #ffd092; 
+  --color-font-principal: #111;
+  --color-font-secundaria: rgb(35, 25, 21); /* #231915 */
+  --shadow-dark: 0 4px 8px 0 rgba(35, 25, 21, 0.2), 0 6px 20px 0 rgba(35, 25, 21, 0.19);
+}
+
+body {
+  width: 100vw;
+  font-family: var(--font-geral);
+  color: var(--color-font-principal);
+  background-color: var(--color-background-principal);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 18vh;
+}
+
+.whatsapp-web__link img {
+  height: 2.2rem;
+  width: 2.2rem;
+}
+
+.whatsapp-web__link:hover {
+  background-color: #ddd;
+}

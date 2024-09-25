@@ -32,15 +32,15 @@
 
 .servico p {
   font-size: .7rem;
-  color: var(--color-font-menu);
+  color: var(--color-font-secundaria);
 }
 
 .servico:hover {
-  border: 3px solid var(--color-background-menu);
+  border: 3px solid var(--color-background-terciaria);
   transform: scale(1.1);
-  box-shadow: 0 4px 8px 0 rgba(35, 25, 21, 0.2), 0 6px 20px 0 rgba(35, 25, 21, 0.19);
+  box-shadow: var(--shadow-dark);
 }
 
 .servico:active {
-  background-color: var(--color-background-menu);
+  background-color: var(--color-background-terciaria);
 } 

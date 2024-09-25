@@ -3,12 +3,12 @@
 .menu__container {
   margin: .5rem;
   position: absolute;
-  background-color: var(--color-background-menu);
+  background-color: var(--color-background-terciaria);
   border-radius: 50%; 
 }
 
 .menu__container:hover {
-  background-color: var(--color-background-menu-hover);
+  background-color: var(--color-background-secundaria);
 }
 
 .menu__toggle {
@@ -25,7 +25,7 @@
   margin: .7rem;
   width: 1.7rem;
   height: 1.7rem;
-  background-image: url("../img/icons/menu-abrir.svg");
+  background-image: url("../../img/icons/menu-abrir.svg");
   background-position: center;
   background-repeat: no-repeat;
   transition: 200ms ease-in-out 0s;
@@ -62,8 +62,8 @@
   padding: 2rem 0 .5rem;
   font-size: 1rem;
   font-family: var(--font-geral);
-  color: var(--color-font-menu);
-  border-bottom: 1px dotted var(--color-font-menu);
+  color: var(--color-font-secundaria);
+  border-bottom: 1px dotted var(--color-font-secundaria);
 }
 
 .menu__lista__item a::first-letter {
@@ -75,7 +75,7 @@
 .menu__lista__item a:hover {
   font-size: 1.1rem;
   font-weight: bold;
-  border-bottom: 2px dotted var(--color-font-menu);
+  border-bottom: 2px dotted var(--color-font-secundaria);
 }
 
 .menu__lista__item:hover a::first-letter {
@@ -93,7 +93,7 @@
 .menu__toggle:checked ~ .menu__label > .menu__menu-hamburguer {
   width: 2rem;
   height: 2rem;
-  background-image: url("../img/icons/menu-fechar.svg");
+  background-image: url("../../img/icons/menu-fechar.svg");
   background-position: center;
   background-repeat: no-repeat;
   transition: 200ms ease-in-out 0s;
@@ -104,7 +104,7 @@
   width: 14rem;
   height: 100vh;
   z-index: 1;
-  background-color: var(--color-background-menu);
+  background-color: var(--color-background-terciaria);
   transition: 200ms ease-in-out 0s;
 }
 

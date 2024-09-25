@@ -4,7 +4,7 @@ const inputEmail = document.querySelector('#email');
 const inputTelefone = document.querySelector('#telefone');
 const inputMensagem = document.querySelector('#mensagem');
 const contatoSalvo = document.querySelector('[data-salvo]');
-const contatos = [];
+const contatos = JSON.parse(localStorage.getItem('contatos')) || [];
 formulario.addEventListener('submit', (evento) => {
     try {
         evento.preventDefault();

@@ -1,0 +1,20 @@
+@import url('../components/banner.css');
+@import url('../components/servicos.css');
+@import url('../components/contato.css');
+@import url('../components/localizacao.css');
+
+main section:not(:first-child) {
+  padding: 2rem 0;
+}
+
+main section:nth-child(3), main section:nth-child(5) {
+  background-color: var(--color-background-secundaria);
+}
+
+main .texto-inicial p {
+  padding: 0rem 1rem;
+  font-size: 1.2rem;
+  text-align: justify;
+  line-height: 2rem;
+}
+
