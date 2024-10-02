@@ -3,7 +3,7 @@ import { Imagem } from "./Imagem";
 const myKey: string = config.MY_KEY;
 
 async function buscarImagens(): Promise<Object[]> {
-  const conexao = await fetch('https://api.pexels.com/v1/search?query=petcare&orientation=landscape&size=medium', {
+  const conexao = await fetch('https://api.pexels.com/v1/search?query=petcare&size=medium&per_page=30', {
     method: 'GET',
     headers: {
       'Authorization': myKey
@@ -21,17 +21,18 @@ const imagens: Imagem[] = [];
     const imagensAPI: Object[] = await buscarImagens();
     
     imagensAPI.forEach(i => {
-      const url: string =  i['src']['landscape'];
-      const nome: string = i['alt'];
-      const nomeFotografo: string = i['photographer'];
-      
-      imagens.push({
-        urlImagem: url,
-        nomeImagem: nome,
-        fotografo:nomeFotografo
-      });
+      if (imagens.length < 10) {
+        const url: string =  i['src']['landscape'];
+        const nome: string = i['alt'];
+        const nomeFotografo: string = i['photographer'];
+        imagens.push({
+          urlImagem: url,
+          nomeImagem: nome,
+          fotografo:nomeFotografo
+        });
+      }
     });
-  
+    
     return imagens;
     
   } catch (error) {

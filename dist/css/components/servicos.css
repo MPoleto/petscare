@@ -17,7 +17,7 @@
   width: 6.2rem;
   height: 6.2rem;
   text-align: center;
-  border-radius: 25%;
+  border-radius: 25px;
   background-color: var(--color-background-principal);
   box-shadow: 0 4px 8px 0 rgba(255, 181, 151, 0.2), 0 6px 20px 0 rgba(255, 181, 151, 0.19);
 }
@@ -44,3 +44,29 @@
 .servico:active {
   background-color: var(--color-background-terciaria);
 } 
+
+@media only screen and (min-width: 992px) {
+  .servicos__container {
+    padding: 2rem 1.8rem;
+  }
+
+  .servico {
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    min-width: 12rem;
+    width: 16vw;
+  }
+
+  .servico img {
+  width: 2.2rem;
+  }
+
+  .servico:last-child img {
+    width: 1.8rem;
+  }
+
+  .servico p {
+    font-size: 1rem;
+    color: var(--color-font-secundaria);
+  }
+}

@@ -1,6 +1,6 @@
 const myKey = config.MY_KEY;
 async function buscarImagens() {
-    const conexao = await fetch('https://api.pexels.com/v1/search?query=petcare&orientation=landscape&size=medium', {
+    const conexao = await fetch('https://api.pexels.com/v1/search?query=petcare&size=medium&per_page=30', {
         method: 'GET',
         headers: {
             'Authorization': myKey
@@ -14,14 +14,16 @@ const imagens = [];
     try {
         const imagensAPI = await buscarImagens();
         imagensAPI.forEach(i => {
-            const url = i['src']['landscape'];
-            const nome = i['alt'];
-            const nomeFotografo = i['photographer'];
-            imagens.push({
-                urlImagem: url,
-                nomeImagem: nome,
-                fotografo: nomeFotografo
-            });
+            if (imagens.length < 10) {
+                const url = i['src']['landscape'];
+                const nome = i['alt'];
+                const nomeFotografo = i['photographer'];
+                imagens.push({
+                    urlImagem: url,
+                    nomeImagem: nome,
+                    fotografo: nomeFotografo
+                });
+            }
         });
         return imagens;
     }

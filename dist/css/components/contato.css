@@ -1,6 +1,6 @@
 #contato__container {
   padding: 1rem;
-  height: 95vh;
+  min-height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -38,19 +38,25 @@
 
 .contato__form {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: .1rem 1.5rem;
+}
+
+.form__campo {
+  display: flex;
   flex-flow: column wrap;
   justify-content: center;
   gap: .3rem;
-  padding: .1rem 1.5rem;
   font-size: .8rem;
 }
 
-.contato__form label {
+.form__campo label {
   padding-top: .8rem;
   color: var(--color-font-secundaria);
 }
 
-.contato__form input, .contato__form textarea {
+.form__campo input, .form__campo textarea {
   padding: .3rem;
   border: 1px solid var(--color-font-secundaria);
   font-size: .8rem;
@@ -59,7 +65,7 @@
   outline: none;
 }
 
-.contato__form input:focus, .contato__form textarea:focus {
+.form__campo input:focus, .form__campo textarea:focus {
   border: 2px solid var(--color-background-secundaria); 
 }
 
@@ -79,6 +85,8 @@
   margin-top: .5rem;
   padding: .6rem;
   font-weight: bold;
+  font-family: var(--font-geral);
+  border: none;
   color: var(--color-background-principal);
   background-color: var(--color-font-secundaria);
 }
@@ -92,4 +100,57 @@
   color: var(--color-font-secundaria);
   background-color: var(--color-background-terciaria);
   box-shadow: var(--shadow-dark);
+}
+
+.mensagem-erro {
+  color: var(--color-background-secundaria);
+}
+
+@media only screen and (min-width: 600px) {
+  #contato__container {
+    min-height: 100vh;
+    align-items: center;
+  }
+
+  #contato__container h2 {
+    font-size: 1.1rem;
+    padding: 1rem 0;
+  }
+  
+  .contato__info {
+    font-size: 1.1rem;
+  }
+  
+  .contato__form {
+    margin: 0 auto;
+    width: 70%;
+  }
+  
+  .form__campo label, .form__campo input, .form__campo textarea {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #contato__container h2 {
+      font-size: 1.5rem;
+  }
+
+  .contato__info {
+    font-size: 1.2rem;
+  }
+
+  
+  .contato__info__item img {
+    width: 1.3rem;
+  }
+
+  .contato__info__item:first-child img {
+    width: 1.2rem;
+  }
+
+  .form__campo {
+    margin-bottom: .5rem;
+  }
+  
 }

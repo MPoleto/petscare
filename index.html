@@ -85,17 +85,29 @@
       </ul>
 
       <form class="contato__form" method="post" data-form>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" minlength="2" required>
-
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" minlength="4" required>
-
-        <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" minlength="10" maxlength="15"  pattern="[0-9]{10,15}" required>
-
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" rows="5" cols="20" minlength="3" required></textarea>
+        <fieldset class="form__campo">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" minlength="2" required>
+          <span class="mensagem-erro"></span>
+        </fieldset>
+        
+        <fieldset class="form__campo">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" minlength="4" required>
+          <span class="mensagem-erro"></span>
+        </fieldset>
+        
+        <fieldset class="form__campo"> 
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" minlength="10" maxlength="15"  pattern="[0-9]{10,15}" required>
+          <span class="mensagem-erro"></span>
+        </fieldset>
+        
+        <fieldset class="form__campo">
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" rows="5" cols="20" minlength="3" required></textarea>
+          <span class="mensagem-erro"></span>
+        </fieldset>
 
         <div class="submit__form">
           <p data-salvo>Mensagem enviada!</p>
@@ -111,7 +123,7 @@
     </section>
   </main>
 
-  <a href="https://wa.me/5599999999999" target="_blank" class="whatsapp-web__link">
+  <a href="https://wa.me/5599999999999" target="_blank" class="whatsapp-web__link" title="Iniciar uma conversa">
     <img src="./dist/img/icons/whatsapp-link.svg" alt="Ícone Whatsapp">
   </a>
 

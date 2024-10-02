@@ -7,7 +7,8 @@ Projeto criado do zero para praticar Typescript.
 
 ### Criar estrutura do projeto:  
 
-- Diretório `dist` para os arquivos que vão ser usados no ambiente final (produção): `index.html` e subdiretórios para os arquivos de `CSS`, `Javascript` e `imagens`.
+- Arquivo `index.html`.  
+- Diretório `dist` para os arquivos que vão ser usados no ambiente final (produção): subdiretórios para os arquivos de `CSS`, `Javascript` e `imagens`.  
 - Diretório `src` para os arquivos usados no desenvolvimento do projeto, que serão os arquivos de `Typescript`.
   - Arquivo `script.ts` - para centralizar todas as importações em apenas um arquivo usando os módulos ES6.
 - Arquivo de configuração do `Typescript`: `tsconfig.json`.
@@ -17,8 +18,10 @@ Projeto criado do zero para praticar Typescript.
 - Criar uma logo para representar a clínica veterinária.
 - Aplicar tags semânticas ao HTML.
 - Aplicar boas práticas CSS para nomenclatura das classes, criação de arquivos separados para os componentes e uso de variáveis.
-- Seguir a abordagem *mobile-first* para a criação e estilização da página.
+- Seguir a abordagem *mobile-first* para a responsividade da página.
+  - Dependendo do tamanho da tela, alterar a estilização onde for necessário para melhorar a apresentação.  
   - Menu da página para a versão mobile no estilo *menu hambúrguer* utilizando `input checkbox`.
+  - Em telas maiores o menu fica no estilo *barra de navegação*.
 - Usar `data attributes` para manipular os elementos HTML com o Typescript.  
 - Criar um formulário para entrar em contato com a clínica.
 - Incorporar um mapa do *Google Maps*, que usa `iframe`, para representar a localização da clínica.
@@ -37,9 +40,11 @@ Projeto criado do zero para praticar Typescript.
   - Armazenar a lista no `localStorage`.
   - Exibir confirmação de que a mensagem foi salva.
   - Limpar o formulário após a captura das informações.
+- Adicionar validação do formulário e mensagens de erro personalizadas para cada campo.
 
 ## Referências
 
 - [Ícones da biblioteca do Font Awesome](https://fontawesome.com/)
-- [Fotos fornecidas por Pexels](https://www.pexels.com/api/documentation/#)
+- [Fotos fornecidas por Pexels](https://www.pexels.com/api/documentation/#)  
+- [Formação da Alura - Desenvolva aplicações Web com JavaScript](https://cursos.alura.com.br/formacao-javascript-front-end-v687029)  
 - [Curso da Alura - TypeScript na prática: implemente um projeto completo com TypeScript e módulos](https://cursos.alura.com.br/course/typescript-pratica-projeto-completo-typescript-modulos)

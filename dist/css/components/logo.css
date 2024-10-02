@@ -38,3 +38,11 @@
   height: 1.48rem;
   width: 8.5rem;
 }
+
+@media only screen and (min-width: 992px) {
+  .logo__container {
+    width: auto;
+    margin-left: .5rem;
+    align-items: center;
+  }
+}

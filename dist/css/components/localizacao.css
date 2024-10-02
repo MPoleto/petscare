@@ -1,6 +1,6 @@
 #localizacao {
-  width: 100vw;
-  height: 90vh;
+  width: 100%;
+  min-height: 90vh;
 }
 
 #localizacao h2 {
@@ -25,4 +25,18 @@
   margin: 1.5rem 7%;
   width: 86%;
   height: 60vh;
+}
+
+@media only screen and (min-width: 992px) {
+  #localizacao h2 {
+    font-size: 1.5rem;
+  }
+
+  #localizacao p {
+    font-size: 1.2rem;
+  }
+
+  #localizacao iframe {
+    height: 65vh;
+  }
 }
